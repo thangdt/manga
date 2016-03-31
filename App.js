@@ -47,7 +47,7 @@ const Widget = (props) => {
   );
 };
 
-class Silder extends React.Component() {
+class Silder extends React.Component {
   render(){
     return (
       <input type="range" min="0" max="100" onChange={this.props.updateTitleByClass} />

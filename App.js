@@ -23,7 +23,7 @@ class App extends React.Component {
     return (
       <div>
         <Widget title={title} content={content} updateTitle={updateTitle}/>
-        <Silder ref="title" updateTitleByClass={this.updateTitleByClass}/>
+        <Slider refs="title" updateTitleByClass={this.updateTitleByClass}/>
       </div>
     );
   }
@@ -47,7 +47,7 @@ const Widget = (props) => {
   );
 };
 
-class Silder extends React.Component {
+class Slider extends React.Component {
   render(){
     return (
       <input type="range" min="0" max="100" onChange={this.props.updateTitleByClass} />
